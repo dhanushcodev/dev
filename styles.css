@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: linear-gradient(to right bottom, #ffdfcc, 5%, #ffe2f6, 20%, #dbedff, 90%, #d9ffe4);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 70vh;
+  padding: 2rem 2rem;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.485), rgba(255, 255, 255, 0.255));
+  border-radius: 2rem;
+  box-shadow: 0px 0px 100px 1px rgba(128, 128, 128, 0.352);
+  transform-style: preserve-3d;
+}
+.container .profile-circle {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right bottom, rgb(255, 116, 116), rgb(162, 215, 255));
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px 1px rgba(128, 128, 128, 0.352);
+  transition: 2s;
+}
+.container .profile-description {
+  margin-top: 2rem;
+  transform-style: preserve-3d;
+}
+.container .profile-description h1 {
+  transition: 2s;
+}
+.container .profile-description p {
+  transition: 2s;
+}
+
+.circle1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.485), rgba(255, 255, 255, 0.255));
+  border-radius: 50%;
+  z-index: -1;
+  bottom: 50px;
+  left: 130px;
+  box-shadow: 0px 0px 100px 1px rgba(128, 128, 128, 0.352);
+}
+
+.circle2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.485), rgba(255, 255, 255, 0.255));
+  border-radius: 50%;
+  z-index: -1;
+  top: 50px;
+  right: 130px;
+  box-shadow: 0px 0px 100px 1px rgba(128, 128, 128, 0.352);
+}/*# sourceMappingURL=styles.css.map */
